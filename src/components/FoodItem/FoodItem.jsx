@@ -1,8 +1,8 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { assets } from "../../assets/assets";
 import "./FoodItem.css";
 import { StoreContext } from "../../context/StoreContext";
-function FoodItem({ id, name, price, description, image }) {
+const FoodItem = ({ id, name, description, price, image }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
   return (
     <div className="food-item">
@@ -37,6 +37,6 @@ function FoodItem({ id, name, price, description, image }) {
       </div>
     </div>
   );
-}
+};
 
 export default FoodItem;
