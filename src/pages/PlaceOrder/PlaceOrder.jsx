@@ -1,6 +1,6 @@
 import "./PlaceOrder";
 function PlaceOrder() {
-  return <div></div>;
+  return <div>Hi</div>;
 }
 
 export default PlaceOrder;
